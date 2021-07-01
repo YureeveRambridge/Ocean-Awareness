@@ -1,5 +1,5 @@
 .d1 {
-  width: 400px;
+  width: 100px;
   padding: 50px;
   margin: 20px;
 }
@@ -16,19 +16,6 @@ body, html {
   color: black;
   background-color: cadetblue;
 }
-
-/* .bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-} */
-
-/* Bottom left text */
-/* .bottom-left {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-} */
 
 h1 {
   font-family: "Times New Roman", Times, serif;
