@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="index_Style.css" type="text/css">
+<link rel="stylesheet" href="commentAndLikeStyle.css">
+<link rel="stylesheet" href="accordian.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/JavaScript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<title>Index</title>
+
+<style>
+  /* for background image */
+.image-background {
+    height: 650px;
+    min-height: 500px;
+    background-image: url("images/image_2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+</style>
+</head>
+<body >
+<div id="wrapper" class="wrapper">
+
+<!-- back to top function -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<!-- background image -->
+<div class='image-background' id='image-background'>
+
+    <!-- top of page menu with drop down -->
+
+  <div class='boxes'>
+    <ul id="accordion" class="accordion">
+      <li>
+        <div class="link">Menu</div>
+        <ul class="submenu">
+          <li><a href="Negative Human Effects.html" target="_blank">Negative Human Effects</a></li>
+          <li><a href="contact_Info.html" target="_blank">Contact Info</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+    <div class='container h-100'>
+      <div class='row h-100 align-items-center'>
+        <div class='col-12 bottom-right'>
+            <div class = 'd1'>
+          <h1 class='display-2'>Protect The Oceans</h1>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+  <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+<!-- paragraphs -->
+  <div class="grid-container">
+    <div  class="div2">
+      <img id ="bannerImg" src="google earthz.png" style="width:550px;height:500px;">
+      <button id="imgBut" onclick="imgSave()">save image</button>
+      <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+
+    <div class = "div2" >
+      <P class="b" id = "para"></P>
+      <input id='para' type="button" value="Save for later" >
+      <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+      <br>
+      <br><p class="b" id = "para2"></p>
+      <input id='para2' type="button" value="Save for later" >
+      <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+  </div>
+
+  <!-- grid container for images and paragraphs -->
+  <div class="grid-container">
+    <div class = "div2">
+      <P class="b" id = "para3"></P>
+      <input id='para3' type="button" value="Save for later" >
+      <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+    <div  class="div2"> 
+      <img id ="bannerImg2" src="deox_infographic.jpeg" style="width:550px;height:500px;">
+      <button id="imgBut" onclick="imgSave2()">save image</button>
+
+
+      <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    </div>
+  </div>
+
+<div class="box">
+<div class="grid-container">
+  <div>
+    <h1 id = "h11" class="head"></h1>
+    <input id='h11' type="button" value="Save for later" >
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+    <hr>
+    <p class="a" id = "para4"></p>
+    <input id='para4' type="button" value="Save for later" >
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+    <h1 id = "h12" class="head"></h1>
+    <input id='h12' type="button" value="Save for later" >
+    <hr>
+    <p class="a" id = "para5"></p>
+    <input id='para5' type="button" value="Save for later" >
+
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+    <h1 id = "quote" class="headA"></h1>
+    <input id='quote' type="button" value="Save for later" >
+
+    <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+
+  </div>
+</div>
+</div>
+
+</div>
+<br>
+<!-- jquery fade and hide effect buttons -->
+<button class="button12">Fade Paragraphs</button>
+<input type='submit' onclick='change();' value='Hide' id='btn1' />  
+<hr><br>
+<!-- form for comments -->
+  <div class="container">
+    <input type="text" placeholder="Enter your name" id="name">
+    <input type="text" aria-rowcount="5" placeholder=" Enter comment" id="comment">
+    <button onclick="add()">Submit</button>
+    <button onclick="location.reload()">Clear</button>
+  </div>
+  <div>
+    <!-- Where comments go -->
+    <ul class="list"></ul>
+  </div>
+    <footer>
+      <!-- for ofr user email input -->
+    <p class="c"> Subcribe to our newsletter:
+      <br><br>
+      Email address: <input type="text" id="frm1" >
+      <input type="button" onclick="emailSub()" value="Submit"></p><br>
+      <br><hr class="a">
+      <p class="d">Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+    <!-- view of how many saved items there are -->
+      Saved Items on this page: 
+      <input type="text" id="number" value="0"/>  
+      <a href="Save for later.html" target="_blank">
+        <input id='but1' type="button" value="View Saved"/>
+      </a>
+    </footer>
+
+
+  <script type='text/javascript' src='index.js'></script>
+  <script type='text/javascript' src='commentsAndLikeScript.js'></script>
+  <script type='text/javascript' src='Save for later.js'></script>
+
+</body>
+</html>
+
+<!-- reffs: -->
+<!-- https://wdexplorer.com/20-examples-beautiful-css-typography-design/ -->
+<!-- https://marine-conservation.org/why-protect-the-ocean/ -->
+<!-- https://www.youtube.com/watch?v=KiqVCAz_hOs -->
+<!-- https://www.w3schools.com/howto/howto_js_toggle_like.asp -->
