@@ -15,12 +15,13 @@ It displays the importance of the ocean to the earth and negative effects on the
 <a name="install"></a>
 ## 2. Installtion
 
-Once downloaded go your code editor files open up all the files in.
+Once downloaded go your code editor and open up all files.
 
 <a name="usage"></a>
 ## 3. Usage tips
 
-The index.html is the first webpage. To view index.html and or another HTML page open the file in your browser. 
+The index.html is the first webpage. 
+To view index.html and or another HTML page, open the file in your browser. 
 
 
 <a name="images"></a>
