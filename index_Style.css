@@ -12,7 +12,7 @@
 
 body, html {
   height: 100%;
-  margin: 0;
+  margin: 50px;
   color: black;
   background-color: cadetblue;
 }
@@ -42,17 +42,21 @@ p.a {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   height: 64px;
+  line-height: 21px; 
+  border-style: solid;
 }
 
-p.b { color: #685206; 
+p.b { color: #070706; 
   font-family: 'Helvetica Neue', sans-serif; 
   font-size: 14px; 
-  line-height: 24px; 
-  margin: 0 0 24px; 
+  line-height: 21px; 
+  margin: 24px 24px 24px; 
   text-align: center; 
   text-justify: inter-word; 
+  border-style: solid;
 }
 /*# sourceMappingURL=index_Style.css.map */
+
 
 a{
   text-decoration: none;
@@ -150,6 +154,7 @@ hr.a{
   font-size: 40px;
   /* height: 50px; */
   text-align: center;
+  border-style: solid;
 
 }
 
